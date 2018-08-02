@@ -12,6 +12,8 @@ while I < (len(S) - 2):
         K = int(I)
         L = int(J)
     I = J + 1
+S1 = ""
 while K <= L:
-    print(S[K])
+    S1 = S1 + S[K]
     K = K + 1
+print(S1)

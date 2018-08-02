@@ -1,8 +1,8 @@
-s=input()
-c = 0
-i = 0
-while i < len(s):
-    if s[i] == 'a' or s[i] == 'e' or s[i] == 'i' or s[i] == 'o' or s[i] == 'u':
-        c=c+1
-    i=i+1
-print("No of vowels:",c)
+S = input()
+C = 0
+I = 0
+while I < len(S):
+    if S[I] == 'a' or S[I] == 'e' or S[I] == 'i' or S[I] == 'o' or S[I] == 'u':
+        C = C + 1
+    I = I + 1
+print(C)

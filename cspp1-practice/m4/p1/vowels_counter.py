@@ -1,3 +1,7 @@
+"""
+vowels
+"""
+
 S = input()
 C = 0
 I = 0

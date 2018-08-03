@@ -1,3 +1,6 @@
+"""
+bob counter
+"""
 S = input()
 S1 = "bob"
 C = 0

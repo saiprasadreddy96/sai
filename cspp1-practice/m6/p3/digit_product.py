@@ -7,7 +7,7 @@ if N < 0:
     N = -N
     P = P * -1
 while N >= 1:
-    P = P * ( N % 10 )
+    P = P * (N % 10)
     N = N // 10
 if N == 0:
     print("0")

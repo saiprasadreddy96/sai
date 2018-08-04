@@ -9,4 +9,7 @@ if N < 0:
 while N >= 1:
     P = P * ( N % 10 )
     N = N // 10
-print(P)
+if N == 0:
+    print("0")
+else:
+    print(P)

@@ -1,11 +1,11 @@
 # Exercise: Assignment-2
-def sumofdigits(n):
+def sumofdigits(num_n):
     '''
     n is positive Integer
 
     returns: a positive integer, the sum of digits of n.
     '''
-    if num_ <= 0:
+    if num_n <= 0:
         return 0
     num_sum = num_n % 10
     return num_sum + sumofdigits(num_n//10)

@@ -10,7 +10,16 @@ def isIn(char, aStr):
     
     returns: True if char is in aStr; False otherwise
     '''
-    # Your code here
+    low = 0;high = len(aStr) - 1
+    if low <= high:
+        mid = (low + high) // 2
+        if aStr[mid] == char:
+            return 1
+        elif aStr[mid] <= char:
+            return isIn(char, aStr[mid + 1:])
+        else:
+            return isIn(char, aStr[:mid - 1])
+    return -1
    
 
 def main():
@@ -19,5 +28,5 @@ def main():
     print(isIn((data[0][0]), data[1]))
 
 
-if __name__== "__main__":
+if __name__ == "__main__":
     main()

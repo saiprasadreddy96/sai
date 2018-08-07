@@ -8,7 +8,7 @@ def factorial(var_N):
 
     returns: a positive integer, the factorial of n
     '''
-    if var_N in [0 1]:
+    if var_N in [0, 1]:
         return 1
     return var_N*factorial(var_N-1)
 def main():

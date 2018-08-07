@@ -16,6 +16,6 @@ def main():
     main
     """
     var_a = int(input())
-    print(factorial(int(var_a)))    
+    print(factorial(int(var_a)))  
 if __name__ == "__main__":
     main()

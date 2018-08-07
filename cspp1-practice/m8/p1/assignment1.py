@@ -4,22 +4,22 @@
 # This function takes in one number and returns one number.
 
 
-def factorial(n):
+def factorial(N):
     '''
     n is positive Integer
 
     returns: a positive integer, the factorial of n
     '''
-    if n == 0 or n == 1:
+    if N == 0 or N == 1:
         return 1
     else:
-        return n*factorial(n-1)
+        return N*factorial(N-1)
     
 
 
 def main():
-    a = int(input())
-    print(factorial(int(a)))    
+    A = int(input())
+    print(factorial(int(A)))    
 
 if __name__== "__main__":
     main()

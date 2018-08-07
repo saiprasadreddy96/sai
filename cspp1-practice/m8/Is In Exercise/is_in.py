@@ -19,7 +19,7 @@ def isIn(char, aStr):
             return isIn(char, aStr[mid + 1:])
         else:
             return isIn(char, aStr[:mid - 1])
-    return -1
+    return 0
    
 
 def main():

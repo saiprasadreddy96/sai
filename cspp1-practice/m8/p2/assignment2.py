@@ -1,4 +1,5 @@
 # Exercise: Assignment-2
+"""sum"""
 def sumofdigits(num_n):
     '''
     n is positive Integer

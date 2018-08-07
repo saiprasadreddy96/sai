@@ -18,4 +18,3 @@ def main():
     print(sumofdigits(int(num_a)))
 if __name__ == "__main__":
     main()
-

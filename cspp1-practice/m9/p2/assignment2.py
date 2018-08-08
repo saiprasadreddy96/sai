@@ -5,7 +5,7 @@ a string, secret_word, and a list of letters, letters_guessed. This function
 returns a string that is comprised of letters and underscores, based on what
 letters in letters_guessed are in secret_word. This shouldn't be too different from isWordGuessed!
 '''
-def get_guessed_word(secret_word, letters_guessed, i, l):
+def get_guessed_word(secret_word, letters_guessed, i, var_l):
     '''
     secret_word: string, the word the user is guessing
     letters_guessed: list, what letters have been guessed so far
@@ -13,11 +13,11 @@ def get_guessed_word(secret_word, letters_guessed, i, l):
       what letters in secret_word have been guessed so far.
     '''
     # FILL IN YOUR CODE HERE...
-    if i == l:
+    if i == var_l:
         return secret_word
     if secret_word[i] not in letters_guessed:
         secret_word = secret_word[:i] + '_' + secret_word[(i+1):]
-    return get_guessed_word(secret_word, letters_guessed, i+1, l)
+    return get_guessed_word(secret_word, letters_guessed, i+1, var_l)
 
 def main():
     '''

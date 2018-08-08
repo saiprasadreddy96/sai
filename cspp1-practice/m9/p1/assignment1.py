@@ -31,7 +31,7 @@ def main():
     list1 = []
     for j in range(1, len(data)):
         list1.append(data[j])
-    if (is_word_guessed(secret_word, list1)):
+    if is_word_guessed(secret_word, list1):
         print("True")
     else:
         print("False")

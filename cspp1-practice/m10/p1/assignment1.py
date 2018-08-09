@@ -12,8 +12,8 @@ def get_available_letters(letters_guessed):
       yet been guessed.
     '''
     s_s="abcdefghijklmnopqrstuvwxyz"
-    l_l=[]
-    l_l=list(s_s)
+    l_l = []
+    l_l = list(s_s)
     for char in letters_guessed:
         if char in l_l:
             l_l.remove(char)

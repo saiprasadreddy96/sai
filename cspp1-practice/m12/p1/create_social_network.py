@@ -1,7 +1,6 @@
 '''
     Assignment-1 Create Social Network
 '''
-
 def create_social_network(data):
     '''
         The data argument passed to the function is a string
@@ -32,26 +31,24 @@ def create_social_network(data):
         Empty dictionary is not None, it is a dictionary with no keys
     '''
      # remove the pass below and start writing your code
-    dict = {}
-    var_list = []
+    var_dictionary = {}
     data = data.split("\n")
-    l = []
+    var_l = []
     data.pop()
-    str1 = []
+    var_str1 = []
     try:
-        for str in data:
-            str1 = str.split(" ")
-            if str1[1] != "follows":
-                d = {}
-                return d
-            str2 = str1[2]
-            l = str2.split(",")
-            dict[str1[0]] = l
-        return dict
+        for var_str in data:
+            var_str1 = var_str.split(" ")
+            if var_str1[1] != "follows":
+                var_d = {}
+                return var_d
+            var_str2 = var_str1[2]
+            var_l = str2.split(",")
+            var_dictionary[str1[0]] = l
+        return var_dictionary
     except:
-        d = {}
-        return d
-        
+        var_d = {}
+        return var_d
 def main():
     '''
         handling testcase input and printing output
@@ -62,7 +59,6 @@ def main():
         i += 1
         string += input()
         string += '\n'
-    
     print(create_social_network(string))
 if __name__ == "__main__":
     main()

@@ -39,9 +39,6 @@ def create_social_network(data):
     try:
         for var_str in data:
             var_str1 = var_str.split(" ")
-            if var_str1[1] != "follows":
-                var_d = {}
-                return var_d
             var_str2 = var_str1[2]
             var_l = str2.split(",")
             var_dictionary[str1[0]] = l

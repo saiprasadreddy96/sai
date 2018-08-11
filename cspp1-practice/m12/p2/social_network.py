@@ -52,7 +52,7 @@ def main():
     '''
         handling testcase input and printing output
     '''
-    network = dict(input())
+    network = eval(input())
     lines = int(input())
     for i in range(lines):
         i += 1

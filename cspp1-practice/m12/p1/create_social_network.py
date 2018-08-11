@@ -41,13 +41,16 @@ def create_social_network(data):
     try:
         for str in data:
             str1 = str.split(" ")
+            if str1[1] != "follows":
+                d = {}
+                return d
             str2 = str1[2]
             l = str2.split(",")
             dict[str1[0]] = l
         return dict
     except:
-        l = {}
-        return l
+        d = {}
+        return d
         
 def main():
     '''
@@ -60,7 +63,6 @@ def main():
         string += input()
         string += '\n'
     
-
     print(create_social_network(string))
 if __name__ == "__main__":
     main()

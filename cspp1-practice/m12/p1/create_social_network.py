@@ -46,7 +46,8 @@ def create_social_network(data):
             dict[str1[0]] = l
         return dict
     except:
-        return invalid
+        l = {}
+        return l
         
 def main():
     '''

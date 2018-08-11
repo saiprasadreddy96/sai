@@ -14,6 +14,8 @@ def follow(network, arg1, arg2):
         update the network dictionary and return it
     '''
     # remove the pass below and start writing your code
+    if arg1 not in network:
+        network[arg1]=[]
     network[arg1].append(arg2)
     return network
 

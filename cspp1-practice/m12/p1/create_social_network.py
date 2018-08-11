@@ -36,16 +36,12 @@ def create_social_network(data):
     var_l = []
     data.pop()
     var_str1 = []
-    try:
-        for var_str in data:
-            var_str1 = var_str.split(" ")
-            var_str2 = var_str1[2]
-            var_l = var_str2.split(",")
-            var_dictionary[var_str1[0]] = l
-        return var_dictionary
-    except:
-        var_d = {}
-        return var_d
+    for var_str in data:
+        var_str1 = var_str.split(" ")
+        var_str2 = var_str1[2]
+        var_l = var_str2.split(",")
+        var_dictionary[var_str1[0]] = var_l
+    return var_dictionary
 def main():
     '''
         handling testcase input and printing output

@@ -31,20 +31,19 @@ def create_social_network(data):
         Return a empty dictionary if the string format of the data is invalid
         Empty dictionary is not None, it is a dictionary with no keys
     '''
-
-    # remove the pass below and start writing your code
-    dict={}
-    var_list=[]
-    data=data.split("\n")
-    l=[]
+     # remove the pass below and start writing your code
+    dict = {}
+    var_list = []
+    data = data.split("\n")
+    l = []
     data.pop()
-    str1=[]
+    str1 = []
     try:
         for str in data:
-            str1=str.split(" ")
-            str2=str1[2]
-            l=str2.split(",")
-            dict[str1[0]]=l
+            str1 = str.split(" ")
+            str2 = str1[2]
+            l = str2.split(",")
+            dict[str1[0]] = l
         return dict
     except:
         return invalid

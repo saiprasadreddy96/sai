@@ -34,6 +34,7 @@ def create_social_network(data):
     var_dictionary = {}
     data = data.split("\n")
     var_l = []
+    print(data)
     data.pop()
     var_str1 = []
     for var_str in data:

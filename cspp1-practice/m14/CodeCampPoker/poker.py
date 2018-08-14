@@ -3,7 +3,6 @@
     Read about poker hands here.
     https://en.wikipedia.org/wiki/List_of_poker_hands
 '''
-
 def is_straight(hand):
     '''
         How do we find out if the given hand is a straight?
@@ -31,13 +30,11 @@ def is_straight(hand):
         else:
             hand2.append(int(hand1[i][0]))
     num = min(hand2)
-    
     for i in range(len(hand2)):
         if num not in hand2:
             return "False"
         num += 1
     return "True"
-
 def is_flush(hand):
     '''
         How do we find out if the given hand is a flush?
@@ -52,7 +49,6 @@ def is_flush(hand):
         if check != check1[1]:
             return "False"
     return "True"
-
 def hand_rank(hand):
     '''
         You will code this function. The goal of the function is to
@@ -61,7 +57,6 @@ def hand_rank(hand):
         The first version should identify if the given hand is a straight
         or a flush or a straight flush.
     '''
-
     # By now you should have seen the way a card is represented.
     # If you haven't then go the main or poker function and print the hands
     # Each card is coded as a 2 character string. Example Kind of Hearts is KH
@@ -85,7 +80,6 @@ def hand_rank(hand):
         return 1
     if is_flush(hand) == "False" and is_straight(hand) == "False":
         return 0
-        
 def poker(hands):
     '''
         This function is completed for you. Read it to learn the code.
@@ -96,7 +90,6 @@ def poker(hands):
 
         Output: Return the winning poker hand
     '''
-
     # the line below may be new to you
     # max function is provided by python library
     # learn how it works, in particular the key argument, from the link
@@ -111,7 +104,6 @@ def poker(hands):
             min = hand_rank(hand)
             han = hand
     return han
-
 if __name__ == "__main__":
     # read the number of test cases
     COUNT = int(input())

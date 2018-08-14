@@ -14,9 +14,9 @@ def is_straight(hand):
         Think of an algorithm: given the card face value how to check if it a straight
         Write the code for it and return True if it is a straight else return False
     '''
-    hand1=[]
-    hand1=hand
-    hand2=[]
+    hand1 = []
+    hand1 = hand
+    hand2 = []
     for i in range(len(hand1)):
         if hand1[i][0] == 'T':
             hand2.append(int(10))
@@ -109,7 +109,7 @@ def poker(hands):
     for hand in hands:
         if hand_rank(hand) >= min:
             min = hand_rank(hand)
-            han=hand
+            han = hand
     return han
 
 if __name__ == "__main__":

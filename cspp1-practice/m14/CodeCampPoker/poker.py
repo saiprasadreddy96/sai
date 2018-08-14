@@ -97,11 +97,11 @@ def poker(hands):
     # hand_rank is a function passed to max
     # hand_rank takes a hand and returns its rank
     # max uses the rank returned by hand_rank and returns the best hand
-    min = 0
+    minimum = 0
     han = []
     for hand in hands:
-        if hand_rank(hand) >= min:
-            min = hand_rank(hand)
+        if hand_rank(hand) >= minimum:
+            minimum = hand_rank(hand)
             han = hand
     return han
 if __name__ == "__main__":

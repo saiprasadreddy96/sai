@@ -33,8 +33,8 @@ def is_flush(hand):
         Write the code for it and return True if it is a flush else return False
     '''
     suits_set = set()
-    for c, s in hand:
-        suits_set.add(s)
+    for v_c, v_s in hand:
+        suits_set.add(v_s)
 
     return len(suits_set) == 1
 

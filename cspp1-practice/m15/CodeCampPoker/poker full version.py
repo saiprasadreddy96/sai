@@ -14,7 +14,6 @@ def dict_fun(hand):
 def is_fourofakind(hand):
     dict_four = {}
     dict_four = dict_fun(hand)
-    if len(dict_four) == 2:
     return len(dict_four) == 2 and 1 in dict_four.values() and 4 in dict_four.values()
 def is_fullhouse(hand):
     dict_full = {}

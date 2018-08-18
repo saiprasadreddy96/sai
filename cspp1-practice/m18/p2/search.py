@@ -39,10 +39,10 @@ def search(search_index, query):
     s = set()
     query = query.lower()
     query = query.split(" ")
-    #print(query,search_index)
+    print(query,search_index)
     search = {}
     search = search_index
-    #print(search)
+    print(search)
     k = ()
     l = []
     for i in range(len(query)):

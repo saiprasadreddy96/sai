@@ -45,9 +45,8 @@ def search(search_index, query):
     k = ()
     l = []
     for i in range(len(query)):
-        print(query[i])
         if  query[i] in search:
-            #print(len(search[query[i]]))
+            print(len(search[query[i]]))
             for k in range(len(search[query[i]])):
                 #print(k)
                 l.append(search[query[i]][k][0])

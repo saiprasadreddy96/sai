@@ -88,7 +88,7 @@ def build_search_index(docs):
             if docs[i][j] not in index:
                 index[docs[i][j]] = [(i,1)]
             else:
-                flag == 0
+                flag = 0
                 for k in range(index[docs[i][j]]):
                     if index[docs[i][j]][k][0] == i:
                         flag = 1

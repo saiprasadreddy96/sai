@@ -81,7 +81,7 @@ def build_search_index(docs):
                         var_m = index[docs[i][j]][k][1]
                         var_m += 1
                         del index[docs[i][j]][k]
-                        index[docs[i][j]].append((i, var_mm))
+                        index[docs[i][j]].append((i, var_m))
                         break
                 if flag == 0:
                     index[docs[i][j]].append((i, 1))

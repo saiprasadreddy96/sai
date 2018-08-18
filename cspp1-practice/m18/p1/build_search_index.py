@@ -55,7 +55,7 @@ def word_list(text):
     text_list = text.split(" ")
     count = 0
     while count < len(text_list):
-        text_list[count] = re.sub("[^a-z]","",text_list[count])
+        text_list[count] = re.sub("[^a-z]", "", text_list[count])
         count += 1
     return text_list
     

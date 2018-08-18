@@ -41,8 +41,8 @@ def search(search_index, query):
     query = query.lower()
     for each_word in query:
         if each_word in search_index:
-            for each_tuple in search_index[each_word]:
-                s = s.add(each_tuple[o])
+            for k in range(len(search_index[each_word])):
+                s = s.add(search_index[each_word][k][0])
         else:
             s = s.add()
     return s

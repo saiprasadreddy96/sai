@@ -43,8 +43,8 @@ def search(search_index, query):
     l = []
     for each_word in query:
         if each_word in search_index:
-            for k in (search_index[each_word]):
-                l.append(k[0,])
+            for k, v in (search_index[each_word]):
+                l.append(k[0])
         else:
             l.append("")
     return l

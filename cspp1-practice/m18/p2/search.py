@@ -42,7 +42,7 @@ def search(search_index, query):
     query = query.split(" ")
     print(query,search_index)
     search = {}
-    search = dict(search_index)
+    search = search_index
     print(search)
     for i in range(len(query)):
         if  query[i] in search:

@@ -96,7 +96,7 @@ def build_search_index(docs):
                         break
                 if flag == 0:
                     index[docs[i][j]].append((i,1))
-        return index
+    return index
                     
                     
 # helper function to print the search index

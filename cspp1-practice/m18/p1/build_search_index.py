@@ -20,9 +20,7 @@
         .
     }
 '''
-
 import re
-
 # helper function to load the stop words from a file
 def load_stopwords(filename):
     '''
@@ -33,18 +31,14 @@ def load_stopwords(filename):
         for line in f_stopwords:
             stopwords[line.strip()] = 0
     return stopwords
-
 def remove_stop_words(word_list):
+    """stop words"""
     stop_words = load_stopwords("stopwords.txt")
-
     temp_word_list = word_list[:]
-
     for each_word in temp_word_list:
         if each_word in stop_words:
             word_list.remove(each_word)
-
     return word_list
-
 def word_list(text):
     '''
         Change case to lower and split the words using a SPACE
@@ -58,50 +52,40 @@ def word_list(text):
         text_list[count] = re.sub("[^a-z]", "", text_list[count])
         count += 1
     return text_list
-    
 def build_search_index(docs):
     '''
         Process the docs step by step as given below
     '''
-
     # initialize a search index (an empty dictionary)
-
     # iterate through all the docs
     # keep track of doc_id which is the list index corresponding the document
     # hint: use enumerate to obtain the list index in the for loop
-
         # clean up doc and tokenize to words list
-
         # add or update the words of the doc to the search index
-
     # return search index
     #index = {word: [(doc_id, frequency)]}
     index = {}
     for i in range(len(docs)):
         docs[i] = word_list(docs[i])
-        
     for i in range(len(docs)):
         docs[i] = remove_stop_words(docs[i])
-    
     for i in range(len(docs)):
         for j in range(len(docs[i])):
             if docs[i][j] not in index:
-                index[docs[i][j]] = [(i,1)]
+                index[docs[i][j]] = [(i, 1)]
             else:
                 flag = 0
                 for k in range(len(index[docs[i][j]])):
                     if index[docs[i][j]][k][0] == i:
                         flag = 1
-                        m = index[docs[i][j]][k][1]
-                        m += 1
+                        var_m = index[docs[i][j]][k][1]
+                        var_m += 1
                         del index[docs[i][j]][k]
-                        index[docs[i][j]].append((i,m))
+                        index[docs[i][j]].append((i, var_mm))
                         break
                 if flag == 0:
-                    index[docs[i][j]].append((i,1))
+                    index[docs[i][j]].append((i, 1))
     return index
-                    
-                    
 # helper function to print the search index
 # use this to verify how the search index looks
 def print_search_index(index):
@@ -111,7 +95,6 @@ def print_search_index(index):
     keys = sorted(index.keys())
     for key in keys:
         print(key, " - ", index[key])
-
 # main function that loads the docs from files
 def main():
     '''

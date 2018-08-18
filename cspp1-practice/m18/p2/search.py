@@ -40,11 +40,12 @@ def search(search_index, query):
     s = set()
     query = query.lower()
     query = query.split(" ")
-    print(query)
-    for each_word in query:
-        if each_word in search_index:
-            for k in range(len(search_index[each_word])):
-                s.add(search_index[each_word][k][0])
+    print(query,search_index)
+    for i in range(len(query)):
+        if query[i] in search_index:
+            for k in (search_index[query[i]]):
+                print(k)
+                s.add(search_index[query[i]][k][0])
         else:
             s.add("")
     return s

@@ -28,7 +28,6 @@
 
     Note: PyLint score need not be 10/10. Anything above 9.5 is good.
 '''
-
 def search(search_index, query):
     '''
         function to search through the search index and return the results
@@ -53,7 +52,6 @@ def search(search_index, query):
         else:
             s.add("")
     return s
-
 def process_queries(search_index, queries):
     '''
         function to process the search queries
@@ -63,7 +61,6 @@ def process_queries(search_index, queries):
     for each_query in queries:
         #print(each_query)
         print(search(search_index, each_query))
-        
 def main():
     '''
         main function
@@ -72,18 +69,14 @@ def main():
     global search_index
     search_index = {}   
     search_index = input()
-
     # read the number of search queries
     lines = int(input())
-    
     # read the search queries into a list
     queries = []
     for i in range(lines):
         queries.append(input())
         i += 1
-
     # call process queries
     process_queries(search_index, queries)
-
 if __name__ == '__main__':
     main()

@@ -44,7 +44,7 @@ def search(search_index, query):
             for k in range(len(search_index[each_word])):
                 s.add(search_index[each_word][k][0])
         else:
-            s = s.add()
+            s.add()
     return s
 
 def process_queries(search_index, queries):

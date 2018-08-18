@@ -75,7 +75,8 @@ def build_search_index(docs):
         # add or update the words of the doc to the search index
 
     # return search index
-    index = {word: [(doc_id, frequency)]}
+    #index = {word: [(doc_id, frequency)]}
+    index = {}
     for i in range(len(docs)):
         docs[i] = word_list(docs[i])
         

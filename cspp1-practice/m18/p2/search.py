@@ -42,7 +42,6 @@ def search(search_index, query):
     #print(query)
     search = {}
     search = search_index
-    k = ()
     l = []
     for i in range(len(query)):
         if  query[i] in search:

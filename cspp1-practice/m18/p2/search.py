@@ -41,9 +41,13 @@ def search(search_index, query):
     query = query.lower()
     query = query.split(" ")
     print(query,search_index)
+    search = {}
+    search = dict(search_index)
+    print(search)
     for i in range(len(query)):
-        if query[i] in search_index:
-            for k in (search_index[query[i]]):
+        if  query[i] in search:
+            print(len(search[query[i]]))
+            for k in range(len(search_index[query[i]])):
                 print(k)
                 s.add(search_index[query[i]][k][0])
         else:
@@ -65,6 +69,7 @@ def main():
         main function
     '''
     # This line loads the search index
+    global search_index
     search_index = {}   
     search_index = input()
 

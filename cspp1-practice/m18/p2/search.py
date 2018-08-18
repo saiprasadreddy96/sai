@@ -44,14 +44,16 @@ def search(search_index, query):
     search = search_index
     #print(search)
     k = ()
+    l = []
     for i in range(len(query)):
         if  query[i] in search:
             #print(len(search[query[i]]))
             for k in (search[query[i]]):
                 #print(k)
-                s.add(k[0])
+                l.append(k[0])
         else:
-            s.add("")
+            l.add("")
+    s= set(l)
     return s
 def process_queries(search_index, queries):
     '''

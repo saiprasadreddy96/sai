@@ -89,7 +89,7 @@ def build_search_index(docs):
                 index[docs[i][j]] = [(i,1)]
             else:
                 flag = 0
-                for k in range(index[docs[i][j]]):
+                for k in range(len(index[docs[i][j]])):
                     if index[docs[i][j]][k][0] == i:
                         flag = 1
                         index[docs[i][j]][k][1] += 1

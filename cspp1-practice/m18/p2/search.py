@@ -39,7 +39,7 @@ def search(search_index, query):
     s = set()
     query = query.lower()
     query = query.split(" ")
-    print(query)
+    #print(query)
     search = {}
     search = search_index
     k = ()

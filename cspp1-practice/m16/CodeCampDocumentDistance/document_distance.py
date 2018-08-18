@@ -40,9 +40,6 @@ def get_frequencydictionary(word_list_1, word_list_2):
                 freq_dict[each_word] = [0, 1]
             else:
                 freq_dict[each_word][1] += 1
-        else:
-            #print("Single Char Word 2:", len(each_word), ":END")
-
     return freq_dict
 
 def compute_similarity(freq_dict):

@@ -45,8 +45,7 @@ def search(search_index, query):
         if each_word in search_index:
             for k in range(len(search_index[each_word])):
                 l.append(search_index[each_word][k][0])
-        else:
-            l.append("")
+
     s = set(l)
     return s
 def process_queries(search_index, queries):

@@ -94,7 +94,8 @@ def build_search_index(docs):
                         flag = 1
                         m = index[docs[i][j]][k][1]
                         m += 1
-                        index[docs[i][j]][k][1] = m
+                        del index[docs[i][j]][k]
+                        index[docs[i][j]].append((i,m))
                         break
                 if flag == 0:
                     index[docs[i][j]].append((i,1))

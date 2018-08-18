@@ -93,7 +93,7 @@ def build_search_index(docs):
                     if index[docs[i][j]][k][0] == i:
                         flag = 1
                         m = index[docs[i][j]][k][1]
-                        m +=1
+                        m += 1
                         index[docs[i][j]][k][1] = m
                         break
                 if flag == 0:

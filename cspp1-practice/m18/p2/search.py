@@ -42,7 +42,7 @@ def search(search_index, query):
     for each_word in query:
         if each_word in search_index:
             for k in range(len(search_index[each_word])):
-                s = s.add(search_index[each_word][k][0])
+                s.add(search_index[each_word][k][0])
         else:
             s = s.add()
     return s

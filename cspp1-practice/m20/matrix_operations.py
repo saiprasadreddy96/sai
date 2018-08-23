@@ -54,9 +54,7 @@ def read_matrix(r, c):
         for i in range(r):
             temp = input()
             l1 = temp.split()
-            if len(l1) != c:
-                print("Error: Invalid input for the matrix")
-                return None
+            l1 = list(map(int, l1))
             m.append(l1)
         return m
     except:

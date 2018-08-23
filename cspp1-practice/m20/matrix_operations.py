@@ -53,16 +53,15 @@ def read_matrix(r, c):
         print an error message and return None
         error message should be "Error: Invalid input for the matrix"
     '''
-    m = [];l2 = []
+    m = [];
     try:
         for i in range(r):
             temp = input()
             l1 = temp.split()
-            for i in range(len(l1)):
-                l2.append(int(l1[i]))
-                
-            m.append(l2)
-            l2 = []
+            if len(l1) != c:
+                print("Error: Invalid input for the matrix")
+                return None
+            m.append(l1)
         return m
     except:
         print("Error: Invalid input for the matrix")
@@ -77,16 +76,13 @@ def main():
 
     # multiply matrix 1 and matrix 2
     temp = input()
-    global r1
+    global r1,c1,r2,c2
     r1 = int(temp[0:1])
-    global c1
     c1 = int(temp[2:])
     m1 = []
     m1 = read_matrix(r1, c1)
     temp = input()
-    global r2
     r2 = int(temp[0:1])
-    global c2
     c2 = int(temp[2:])
     m2 = []
     m2 = read_matrix(r2, c2)

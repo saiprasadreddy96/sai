@@ -89,8 +89,8 @@ def main():
     m3 = []; m4 = []
     if m1 != 0 and m2 != 0:
         m3 = add_matrix(m1, m2)
-        m4 = mult_matrix(m1, m2)
         print(m3)
+        m4 = mult_matrix(m1, m2)
         print(m4)
 
     

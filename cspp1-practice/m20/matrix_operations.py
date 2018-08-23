@@ -34,7 +34,7 @@ def add_matrix(m1, m2):
     try:
         for i in range(r1):
             for j in range(c1):
-                l1.append(int(m1[i][j]) + int(m2[i][j]))
+                l1.append((m1[i][j]) + (m2[i][j]))
             m3.append(l1)
             l1 = []
         return m3

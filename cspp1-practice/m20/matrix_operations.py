@@ -21,8 +21,6 @@ def mult_matrix(m1, m2):
     else:
         print("Error: Matrix shapes invalid for mult")
         return None
-                                  
-
 def add_matrix(m1, m2):
     '''
         check if the matrix shapes are similar
@@ -43,8 +41,6 @@ def add_matrix(m1, m2):
     else:
         print("Error: Matrix shapes invalid for addition")
         return None
-        
-
 def read_matrix(r, c):
     '''
         read the matrix dimensions from input
@@ -66,7 +62,6 @@ def read_matrix(r, c):
     except:
         print("Error: Invalid input for the matrix")
         return None
-
 def main():
     # read matrix 1
 
@@ -76,7 +71,7 @@ def main():
 
     # multiply matrix 1 and matrix 2
     temp = input()
-    global r1,c1,r2,c2
+    global r1, c1, r2, c2
     r1 = int(temp[0:1])
     c1 = int(temp[2:])
     m1 = []
@@ -92,7 +87,5 @@ def main():
         print(m3)
         m4 = mult_matrix(m1, m2)
         print(m4)
-
-    
 if __name__ == '__main__':
     main()

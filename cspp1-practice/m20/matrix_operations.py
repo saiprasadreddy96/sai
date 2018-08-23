@@ -53,7 +53,7 @@ def read_matrix(r, c):
         print an error message and return None
         error message should be "Error: Invalid input for the matrix"
     '''
-    m = []
+    m = [];l2 = []
     try:
         for i in range(r):
             temp = input()

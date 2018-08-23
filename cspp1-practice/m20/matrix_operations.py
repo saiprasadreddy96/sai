@@ -13,7 +13,7 @@ def mult_matrix(m1, m2):
             for j in range(c2):
                 sum = 0
                 for k in range(r2):
-                    sum = sum + (int(m1[i][k]) * int(m2[k][j]))
+                    sum = sum + ((m1[i][k]) * (m2[k][j]))
                 l1.append(sum)
             m4.append(l1)
             l1 = []
@@ -34,7 +34,7 @@ def add_matrix(m1, m2):
     try:
         for i in range(r1):
             for j in range(c1):
-                l1.append(int(m1[i][j]) + int(m2[i][j]))
+                l1.append((m1[i][j]) + (m2[i][j]))
             m3.append(l1)
             l1 = []
         return m3
@@ -54,6 +54,7 @@ def read_matrix(r, c):
         for i in range(r):
             temp = input()
             l1 = temp.split()
+            l1 = list(map(int,l1))
             m.append(l1)
             if len(l1) != c:
                print("Error: Invalid input for the matrix")

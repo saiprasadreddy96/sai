@@ -58,8 +58,10 @@ def read_matrix(r, c):
         for i in range(r):
             temp = input()
             l1 = temp.split()
-            l1 = [int(x) for x in l1]
-            m.append(l1)
+            for i in range(len(l1)):
+                l2.append(int(l1[i])
+                
+            m.append(l2)
         return m
     except:
         print("Error: Invalid input for the matrix")

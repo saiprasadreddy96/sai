@@ -8,7 +8,7 @@ def mult_matrix(m1, m2):
     '''
     m4 = []
     l1 = []
-    try:
+    if r2 == c1:
         for i in range(r1):
             for j in range(c2):
                 sum = 0
@@ -18,7 +18,7 @@ def mult_matrix(m1, m2):
             m4.append(l1)
             l1 = []
         return m4
-    except:
+    else:
         print("Error: Matrix shapes invalid for mult")
         return None
 def add_matrix(m1, m2):

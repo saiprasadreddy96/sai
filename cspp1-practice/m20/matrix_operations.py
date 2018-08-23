@@ -58,6 +58,7 @@ def read_matrix(r, c):
         for i in range(r):
             temp = input()
             l1 = temp.split()
+            l1 = [int(x) for x in l1]
             m.append(l1)
         return m
     except IndexError:

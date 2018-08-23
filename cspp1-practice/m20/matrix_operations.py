@@ -13,7 +13,7 @@ def mult_matrix(m1, m2):
             for j in range(c2):
                 sum = 0
                 for k in range(r2):
-                    sum = sum + (int(m1[i][k]) + int(m2[k][j]))
+                    sum = sum + (int(m1[i][k]) * int(m2[k][j]))
                 l1.append(sum)
             m4.append(l1)
             l1 = []

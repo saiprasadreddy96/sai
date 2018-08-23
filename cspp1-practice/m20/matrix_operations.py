@@ -62,7 +62,7 @@ def read_matrix(r, c):
         return m
     except IndexError:
         print("Error: Invalid input for the matrix")
-        return 0
+        return None
 
 def main():
     # read matrix 1
@@ -87,7 +87,7 @@ def main():
     m2 = []
     m2 = read_matrix(r2, c2)
     m3 = []; m4 = []
-    if m1 != 0 and m2 != 0:
+    if m1 != None and m2 != None:
         m3 = add_matrix(m1, m2)
         print(m3)
         m4 = mult_matrix(m1, m2)

@@ -36,7 +36,10 @@ def add_matrix(m1, m2):
                 l1.append(int(m1[i][j]) + int(m2[i][j]))
             m3.append(l1)
             l1 = []
-    return m3
+        return m3
+    else:
+        print("Error: Matrix shapes invalid for addition")
+        return None
         
 
 def read_matrix(r, c):

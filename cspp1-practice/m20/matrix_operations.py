@@ -81,7 +81,7 @@ def main():
     m4 = []
     m4 = mult_matrix(m1, m2)
     print(m3)
-    print("\n",m4)
+    print(m4)
 
     
 if __name__ == '__main__':

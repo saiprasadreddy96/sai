@@ -62,6 +62,7 @@ def read_matrix(r, c):
                 l2.append(int(l1[i])
                 
             m.append(l2)
+            l2 = []
         return m
     except:
         print("Error: Invalid input for the matrix")

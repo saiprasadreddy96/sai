@@ -48,11 +48,15 @@ def read_matrix(r, c):
         error message should be "Error: Invalid input for the matrix"
     '''
     m = []
-    for i in range(r):
-        temp = input()
-        l1 = temp.split()
-        m.append(l1)
-    return m
+    try:
+        for i in range(r):
+            temp = input()
+            l1 = temp.split()
+            m.append(l1)
+        return m
+    except:
+        print("Error: Invalid input for the matrix")
+        return 0
 
 def main():
     # read matrix 1
@@ -76,12 +80,12 @@ def main():
     c2 = int(temp[2:])
     m2 = []
     m2 = read_matrix(r2, c2)
-    m3 = []
-    m3 = add_matrix(m1, m2)
-    m4 = []
-    m4 = mult_matrix(m1, m2)
-    print(m3)
-    print(m4)
+    m3 = []; m4 = []
+    if m1 != 0 and m2 != 0:
+        m3 = add_matrix(m1, m2)
+        m4 = mult_matrix(m1, m2)
+        print(m3)
+        print(m4)
 
     
 if __name__ == '__main__':

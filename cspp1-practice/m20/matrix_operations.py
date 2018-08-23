@@ -59,7 +59,7 @@ def read_matrix(r, c):
             temp = input()
             l1 = temp.split()
             for i in range(len(l1)):
-                l2.append(int(l1[i])
+                l2.append(int(l1[i]))
                 
             m.append(l2)
             l2 = []

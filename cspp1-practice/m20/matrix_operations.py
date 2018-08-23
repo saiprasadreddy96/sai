@@ -73,12 +73,12 @@ def main():
     temp = input()
     global r1, c1, r2, c2
     r1 = int(temp[0:1])
-    c1 = int(temp[2: ])
+    c1 = int(temp[2:])
     m1 = []
     m1 = read_matrix(r1, c1)
     temp = input()
     r2 = int(temp[0:1])
-    c2 = int(temp[2: ])
+    c2 = int(temp[2:])
     m2 = []
     m2 = read_matrix(r2, c2)
     m3 = []; m4 = []

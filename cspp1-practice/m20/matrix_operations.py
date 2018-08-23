@@ -80,7 +80,8 @@ def main():
     m3 = add_matrix(m1, m2)
     m4 = []
     m4 = mult_matrix(m1, m2)
-    print(m3,"\n",m4)
+    print(m3)
+    print("\n",m4)
 
     
 if __name__ == '__main__':

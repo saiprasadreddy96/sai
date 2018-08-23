@@ -80,7 +80,7 @@ def main():
     m3 = add_matrix(m1, m2)
     m4 = []
     m4 = mult_matrix(m1, m2)
-    print(m3+" "+m4)
+    print(m3,m4)
     
 if __name__ == '__main__':
     main()

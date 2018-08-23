@@ -61,7 +61,7 @@ def read_matrix(r, c):
             l1 = [int(x) for x in l1]
             m.append(l1)
         return m
-    except TypeError:
+    except:
         print("Error: Invalid input for the matrix")
         return None
 

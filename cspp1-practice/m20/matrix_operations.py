@@ -8,7 +8,7 @@ def mult_matrix(m1, m2):
     '''
     m4 = []
     l1 = []
-    if c1 == r2:
+    try:
         for i in range(r1):
             for j in range(c2):
                 sum = 0
@@ -18,7 +18,7 @@ def mult_matrix(m1, m2):
             m4.append(l1)
             l1 = []
         return m4
-    else:
+    except:
         print("Error: Matrix shapes invalid for mult")
         return None
 def add_matrix(m1, m2):
@@ -31,14 +31,14 @@ def add_matrix(m1, m2):
     '''
     m3 = []
     l1 = []
-    if r1 == r2 and c1 == c2:
+    try:
         for i in range(r1):
             for j in range(c1):
                 l1.append(int(m1[i][j]) + int(m2[i][j]))
             m3.append(l1)
             l1 = []
         return m3
-    else:
+    except:
         print("Error: Matrix shapes invalid for addition")
         return None
 def read_matrix(r, c):
@@ -70,6 +70,7 @@ def main():
     # add matrix 1 and matrix 2
 
     # multiply matrix 1 and matrix 2
+    """main"""
     temp = input()
     global r1, c1, r2, c2
     r1 = int(temp[0:1])

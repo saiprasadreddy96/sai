@@ -28,7 +28,7 @@ def read_input():
 def write_output():
     if (check_invalid() == 0):
         print("invalid input")
-    elif count_input['o'] != count_input['x']:
+    elif count_input[o] != count_input[x]:
         print("invalid game")
     else:
         game_ttt()

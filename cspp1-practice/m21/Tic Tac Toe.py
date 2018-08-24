@@ -1,7 +1,7 @@
-global ttt;pos_input;count_input;x;o
-ttt = [];pos_input = ['0', 'x', '.'];count_input = {'0':0, 'x':0, '.':0};x = ['x', 'x', 'x'];o = ['0', '0', '0']
+global ttt, pos_input, count_input, x, o
+ttt = [];pos_input = ['o', 'x', '.'];count_input = {'o':0, 'x':0, '.':0};x = ['x', 'x', 'x'];o = ['o', 'o', 'o']
 def game_ttt():
-    global c_x;c_o
+    global c_x, c_o
     c_x = 0;c_o = 0
     for i in range(3):
         if ttt[i] == x or [ttt[0][i], ttt[1][i], ttt[2][i]] == x:
@@ -22,14 +22,16 @@ def check_invalid():
 def read_input():
     str_line = []
     for i in range(3):
-        str_line = input().split()
+        str_line = input()
+        str_line = str_line.split()
         ttt.append(str_line)
 def write_output():
     if (check_invalid() == 0):
         print("invalid input")
-    elif count_input['0'] != count_input['x']:
+    elif count_input['o'] != count_input['x']:
         print("invalid game")
     else:
+        game_ttt()
         if c_x == 1 and c_o ==1:
             print("x o")
         elif c_x == 1:
@@ -42,3 +44,4 @@ def write_output():
 def main():
     read_input()
     write_output()
+main()

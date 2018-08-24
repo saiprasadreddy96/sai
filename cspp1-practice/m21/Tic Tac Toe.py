@@ -1,54 +1,54 @@
-global TTT, pos_input, count_input, x, o
-TTT = [];pos_input = ['o', 'x', '.'];count_input = {'o':0, 'x':0, '.':0};x = ['x', 'x', 'x'];o = ['o', 'o', 'o']
+glObal TTT, pOs_input, cOunt_input, X, O
+TTT = [];pOs_input = ['O', 'X', '.'];cOunt_input = {'O':0, 'X':0, '.':0};X = ['X', 'X', 'X'];O = ['O', 'O', 'O']
 def game_TTT():
     """game ttt"""
-    global c_x, c_o
-    c_x = 0;c_o = 0
-    for i in range(3):
-        if TTT[i] == x or [TTT[0][i], TTT[1][i], TTT[2][i]] == x:
-            c_x += 1
-        if TTT[i] == o or [TTT[0][i], TTT[1][i], TTT[2][i]] == o:
-            c_o += 1
-    if [TTT[0][0], TTT[1][1], TTT[2][2]] == x or [TTT[0][2], TTT[1][1], TTT[2][0]] == x:
-        c_x += 1
-    if [TTT[0][0], TTT[1][1], TTT[2][2]] == o or [TTT[0][2], TTT[1][1], TTT[2][0]] == o:
-        c_o += 1
+    glObal c_X, c_O
+    c_X = 0;c_O = 0
+    fOr i in range(3):
+        if TTT[i] == X Or [TTT[0][i], TTT[1][i], TTT[2][i]] == X:
+            c_X += 1
+        if TTT[i] == O Or [TTT[0][i], TTT[1][i], TTT[2][i]] == O:
+            c_O += 1
+    if [TTT[0][0], TTT[1][1], TTT[2][2]] == X Or [TTT[0][2], TTT[1][1], TTT[2][0]] == X:
+        c_X += 1
+    if [TTT[0][0], TTT[1][1], TTT[2][2]] == O Or [TTT[0][2], TTT[1][1], TTT[2][0]] == O:
+        c_O += 1
 def check_invalid():
     """invalid game"""
-    for i in range(3):
-        for j in range(3):
-            if TTT[i][j] not in pos_input:
+    fOr i in range(3):
+        fOr j in range(3):
+            if TTT[i][j] nOt in pOs_input:
                 return 0
-            count_input[TTT[i][j]] += 1
-    #print(count_input)
-    #print(count_input['o'])
+            cOunt_input[TTT[i][j]] += 1
+    #print(cOunt_input)
+    #print(cOunt_input['O'])
     return 1
 def read_input():
     """read input"""
     str_line = []
-    for i in range(3):
+    fOr i in range(3):
         str_line = input()
         str_line = str_line.split()
         TTT.append(str_line)
     #print(TTT)
-def write_output():
-    """write output"""
+def write_Output():
+    """write Output"""
     if (check_invalid() == 0):
         print("invalid input")
-    elif (count_input['o'] != count_input['x'] + 1) and (count_input['x'] != count_input['o'] + 1):
+    elif (cOunt_input['O'] != cOunt_input['X'] + 1) and (cOunt_input['X'] != cOunt_input['O'] + 1):
         print("invalid game")
     else:
         game_TTT()
-        if c_x == 1 and c_o == 1:
-            print("x o")
-        elif c_x == 1:
-            print("x")
-        elif c_o == 1:
-            print("o")
+        if c_X == 1 and c_O == 1:
+            print("X O")
+        elif c_X == 1:
+            print("X")
+        elif c_O == 1:
+            print("O")
         else:
             print("draw")
 def main():
     """main"""
     read_input()
-    write_output()
+    write_Output()
 main()

@@ -1,23 +1,23 @@
-global ttt, pos_input, count_input, x, o
-ttt = [];pos_input = ['o', 'x', '.'];count_input = {'o':0, 'x':0, '.':0};x = ['x', 'x', 'x'];o = ['o', 'o', 'o']
-def game_ttt():
+global TTT, pos_input, count_input, x, o
+TTT = [];pos_input = ['o', 'x', '.'];count_input = {'o':0, 'x':0, '.':0};x = ['x', 'x', 'x'];o = ['o', 'o', 'o']
+def game_TTT():
     global c_x, c_o
     c_x = 0;c_o = 0
     for i in range(3):
-        if ttt[i] == x or [ttt[0][i], ttt[1][i], ttt[2][i]] == x:
+        if TTT[i] == x or [TTT[0][i], TTT[1][i], TTT[2][i]] == x:
             c_x += 1
-        if ttt[i] == o or [ttt[0][i], ttt[1][i], ttt[2][i]] == o:
+        if TTT[i] == o or [TTT[0][i], TTT[1][i], TTT[2][i]] == o:
             c_o += 1
-    if [ttt[0][0], ttt[1][1], ttt[2][2]] == x or [ttt[0][2], ttt[1][1], ttt[2][0]] == x:
+    if [TTT[0][0], TTT[1][1], TTT[2][2]] == x or [TTT[0][2], TTT[1][1], TTT[2][0]] == x:
         c_x += 1
-    if [ttt[0][0], ttt[1][1], ttt[2][2]] == o or [ttt[0][2], ttt[1][1], ttt[2][0]] == o:
+    if [TTT[0][0], TTT[1][1], TTT[2][2]] == o or [TTT[0][2], TTT[1][1], TTT[2][0]] == o:
         c_o += 1
 def check_invalid():
     for i in range(3):
         for j in range(3):
-            if ttt[i][j] not in pos_input:
+            if TTT[i][j] not in pos_input:
                 return 0
-            count_input[ttt[i][j]] += 1
+            count_input[TTT[i][j]] += 1
     #print(count_input)
     #print(count_input['o'])
     return 1
@@ -26,16 +26,16 @@ def read_input():
     for i in range(3):
         str_line = input()
         str_line = str_line.split()
-        ttt.append(str_line)
-    #print(ttt)
+        TTT.append(str_line)
+    #print(TTT)
 def write_output():
     if (check_invalid() == 0):
         print("invalid input")
     elif (count_input['o'] != count_input['x'] + 1) and (count_input['x'] != count_input['o'] + 1):
         print("invalid game")
     else:
-        game_ttt()
-        if c_x == 1 and c_o ==1:
+        game_TTT()
+        if c_x == 1 and c_o == 1:
             print("x o")
         elif c_x == 1:
             print("x")
@@ -43,7 +43,6 @@ def write_output():
             print("o")
         else:
             print("draw")
-        
 def main():
     read_input()
     write_output()

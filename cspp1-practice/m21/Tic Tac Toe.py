@@ -40,7 +40,7 @@ def write_output():
     else:
         game_TTT()
         if c_x == 1 and c_o == 1:
-            print("x o")
+            print("invalid game")
         elif c_x == 1:
             print("x")
         elif c_o == 1:

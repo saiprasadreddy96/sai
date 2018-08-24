@@ -39,7 +39,7 @@ def write_output():
             print("x o")
         elif c_x == 1:
             print("x")
-        elif c_0 == 1:
+        elif c_o == 1:
             print("o")
         else:
             print("draw")

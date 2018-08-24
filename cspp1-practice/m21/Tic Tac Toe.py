@@ -18,6 +18,8 @@ def check_invalid():
             if ttt[i][j] not in pos_input:
                 return 0
             count_input[ttt[i][j]] += 1
+    #print(count_input)
+    #print(count_input['o'])
     return 1
 def read_input():
     str_line = []
@@ -25,10 +27,11 @@ def read_input():
         str_line = input()
         str_line = str_line.split()
         ttt.append(str_line)
+    #print(ttt)
 def write_output():
     if (check_invalid() == 0):
         print("invalid input")
-    elif count_input[o] != count_input[x]:
+    elif count_input['o'] != count_input['x']:
         print("invalid game")
     else:
         game_ttt()

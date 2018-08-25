@@ -14,10 +14,17 @@ def frequency_graph(dictionary):
        while j < len(temp_l):
            char_1 = temp_l[i]
            char_2 = temp_l[j]
-           if char_1[0] >= char_2[0]:
+
+           if char_1[0] > char_2[0]:
                temp = temp_l[i]
                temp_l[i] = temp_l[j]
                temp_l[j] = temp
+           elif char_1[0] == char_2[0]:
+               if char_1[1] > char_2[1]:
+                   temp = temp_l[i]
+                   temp_l[i] = temp_l[j]
+                   temp_l[j] = temp
+               
            j += 1
     
 

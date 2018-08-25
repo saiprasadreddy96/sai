@@ -27,7 +27,8 @@ def main():
     frequency_graph(dictionary)
     for each_i in temp_l:
         str = ''
-        for each_j in dictionary[each_i]:
+        t_t = int(dictionary[each_i])
+        for each_j in range(t_t):
             str += '#'
             print(each_i, '-', str)
 if __name__ == '__main__':

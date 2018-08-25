@@ -12,9 +12,10 @@ def check_sudoku(sudoku):
         Your solution goes here. You may add other helper functions as needed.
         The function has to return True for a valid sudoku grid and false otherwise
     '''
-    temp_list1 = [];
-    temp_list2 = [];
-    temp1 = [];temp2 = []
+    temp_list1 = []
+    temp_list2 = []
+    temp1 = []
+    temp2 = []
     for each_i in range(len(sudoku)):
         temp_list1 = sudoku[each_i]
         temp_list2 = []
@@ -28,12 +29,12 @@ def check_sudoku(sudoku):
     for each_i in range(9):
         temp_list3[each_i] = [0] * 9
     temp_list4 = [0] * 9
-    #k = 0
+    k = 0
     for each_i in range(len(sudoku)):
         for each_j in range(9):
             if each_i in [1, 2, 0] and each_j in [1, 2, 0]:
-                temp_list3[0][temp_list4[0]] = sudoku[each_i][each_j]
-                temp_list4[0] += 1
+                temp_list3[k][temp_list4[k]] = sudoku[each_i][each_j]
+                temp_list4[k] += 1
             elif each_i in [1, 2, 0] and each_j in [4, 5, 3]:
                 temp_list3[1][temp_list4[1]] = sudoku[each_i][each_j]
                 temp_list4[1] += 1

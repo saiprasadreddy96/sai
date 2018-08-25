@@ -29,10 +29,10 @@ def main():
     dictionary = eval(input())
     frequency_graph(dictionary)
     for each_i in temp_l:
-        str = ''
+        str1 = ''
         t_t = int(dictionary[each_i])
         for each_j in range(t_t):
-            str += '#'
-        print(each_i, '-', str)
+            str1 += '#'
+        print(each_i, '-', str1)
 if __name__ == '__main__':
     main()

@@ -7,7 +7,6 @@
     Complete the check_sudoku function to check if the given grid
     satisfies all the sudoku rules given in the statement above.
 '''
-
 def check_sudoku(sudoku):
     '''
         Your solution goes here. You may add other helper functions as needed.
@@ -66,10 +65,8 @@ def main():
         main function to read input sudoku from console
         call check_sudoku function and print the result to console
     '''
-    
     # initialize empty list
     sudoku = []
-
     # loop to read 9 lines of input from console
     for i in range(9):
         # read a line, split it on SPACE and append row to list
@@ -79,6 +76,5 @@ def main():
     # call solution function and print result to console
     #print(sudoku)
     print(check_sudoku(sudoku))
-
 if __name__ == '__main__':
     main()

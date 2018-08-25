@@ -28,8 +28,8 @@ def main():
     for each_i in temp_l:
         str = ''
         t_t = int(dictionary[each_i])
-        for each_j in range(t_t):
+        for each_j in range(t_t) :
             str += '#'
-            print(each_i, '-', str)
+        print(each_i, '-', str)
 if __name__ == '__main__':
     main()

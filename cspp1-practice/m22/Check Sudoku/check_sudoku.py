@@ -25,7 +25,7 @@ def check_sudoku(sudoku):
         temp2 = sorted(temp_list2)
         if  temp1 != [1, 2, 3, 4, 5, 6, 7, 8, 9] or temp2 != [1, 2, 3, 4, 5, 6, 7, 8, 9]:
             return False
-    temp_list3 = [0] * 9
+    """temp_list3 = [0] * 9
     for each_i in range(9):
         temp_list3[each_i] = [0] * 9
     temp_list4 = [0] * 9
@@ -62,7 +62,10 @@ def check_sudoku(sudoku):
     for each_i in range(len(temp_list3)):
         temp_list1 = temp_list3[each_i]
         if sorted(temp_list1) != [1, 2, 3, 4, 5, 6, 7, 8, 9]:
-            return False
+            return False"""
+    """for i in range(3):
+        for j in range(3):
+            for k in range("""
     return True
 def main():
     '''

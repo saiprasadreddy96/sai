@@ -33,7 +33,7 @@ def check_sudoku(sudoku):
     for each_i in range(len(sudoku)):
         for each_j in range(9):
             if each_i in [1, 2, 0] and each_j in [1, 2, 0]:
-                temp_list3[k][temp_list4[k]] = sudoku[each_i][each_j]
+                temp_list3[0][temp_list4[0]] = sudoku[each_i][each_j]
                 temp_list4[k] += 1
             elif each_i in [1, 2, 0] and each_j in [4, 5, 3]:
                 temp_list3[1][temp_list4[1]] = sudoku[each_i][each_j]

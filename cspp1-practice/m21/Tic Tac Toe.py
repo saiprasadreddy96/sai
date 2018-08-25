@@ -20,8 +20,6 @@ def check_invalid():
             if TTT[i][j] not in pos_input:
                 return 0
             count_input[TTT[i][j]] += 1
-    #print(count_input)
-    #print(count_input['o'])
     return 1
 def read_input():
     """read input"""
@@ -30,7 +28,6 @@ def read_input():
         str_line = input()
         str_line = str_line.split()
         TTT.append(str_line)
-    #print(TTT)
 def write_output():
     """write output"""
     if (check_invalid() == 0):

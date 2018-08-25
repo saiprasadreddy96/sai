@@ -77,7 +77,7 @@ def main():
         row = list(map(int, row))
         sudoku.append(row)
     # call solution function and print result to console
-    print(sudoku)
+    #print(sudoku)
     print(check_sudoku(sudoku))
 
 if __name__ == '__main__':

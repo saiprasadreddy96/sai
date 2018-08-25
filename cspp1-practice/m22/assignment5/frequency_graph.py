@@ -17,13 +17,12 @@ def frequency_graph(dictionary):
                temp = temp_l[i]
                temp_l[i] = temp_l[j]
                temp_l[j] = temp
-            j += 1
-    #print(temp_l)
+           j += 1
     for each_i in temp_l:
-        str = ''
-        for each_j in dictionary[each_i]:
-            str += '#'
-        print(each_i, '-', str)
+       str = ''
+       for each_j in dictionary[each_i]:
+          str += '#'
+          print(each_i, '-', str)
 
 def main():
     dictionary = eval(input())

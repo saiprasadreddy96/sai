@@ -23,44 +23,6 @@ def check_sudoku(sudoku):
             temp_list2.append(sudoku[each_j][each_i])
         if  sorted(temp_list1) != [1, 2, 3, 4, 5, 6, 7, 8, 9] or sorted(temp_list2) != [1, 2, 3, 4, 5, 6, 7, 8, 9]:
             return False
-    """temp_list3 = [0] * 9
-    for each_i in range(9):
-        temp_list3[each_i] = [0] * 9
-    temp_list4 = [0] * 9
-    k = 0
-    for each_i in range(len(sudoku)):
-        for each_j in range(9):
-            if each_i in [1, 2, 0] and each_j in [1, 2, 0]:
-                temp_list3[0][temp_list4[0]] = sudoku[each_i][each_j]
-                temp_list4[k] += 1
-            elif each_i in [1, 2, 0] and each_j in [4, 5, 3]:
-                temp_list3[1][temp_list4[1]] = sudoku[each_i][each_j]
-                temp_list4[1] += 1
-            elif each_i in [1, 2, 0] and each_j in [7, 8, 6]:
-                temp_list3[2][temp_list4[2]] = sudoku[each_i][each_j]
-                temp_list4[2] += 1
-            elif each_i in [4, 5, 3] and each_j in [1, 2, 0]:
-                temp_list3[3][temp_list4[3]] = sudoku[each_i][each_j]
-                temp_list4[3] += 1
-            elif each_i in [4, 5, 3] and each_j in [4, 5, 3]:
-                temp_list3[4][temp_list4[4]] = sudoku[each_i][each_j]
-                temp_list4[4] += 1
-            elif each_i in [4, 5, 3] and each_j in [7, 8, 6]:
-                temp_list3[5][temp_list4[5]] = sudoku[each_i][each_j]
-                temp_list4[5] += 1
-            elif each_i in [7, 8, 6] and each_j in [1, 2, 0]:
-                temp_list3[6][temp_list4[6]] = sudoku[each_i][each_j]
-                temp_list4[6] += 1
-            elif each_i in [7, 8, 6] and each_j in [4, 5, 3]:
-                temp_list3[7][temp_list4[7]] = sudoku[each_i][each_j]
-                temp_list4[7] += 1
-            elif each_i in [7, 8, 6] and each_j in [7, 8, 6]:
-                temp_list3[8][temp_list4[8]] = sudoku[each_i][each_j]
-                temp_list4[8] += 1
-    for each_i in range(len(temp_list3)):
-        temp_list1 = temp_list3[each_i]
-        if sorted(temp_list1) != [1, 2, 3, 4, 5, 6, 7, 8, 9]:
-            return False"""
     for i in range(3):
         for j in range(3):
             temp_list3 = []

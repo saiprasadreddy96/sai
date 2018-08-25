@@ -21,9 +21,7 @@ def check_sudoku(sudoku):
         temp_list2 = []
         for each_j in range(9):
             temp_list2.append(sudoku[each_j][each_i])
-        temp1 = sorted(temp_list1)
-        temp2 = sorted(temp_list2)
-        if  temp1 != [1, 2, 3, 4, 5, 6, 7, 8, 9] or temp2 != [1, 2, 3, 4, 5, 6, 7, 8, 9]:
+        if  sorted(temp_list1) != [1, 2, 3, 4, 5, 6, 7, 8, 9] or sorted(temp_list2) != [1, 2, 3, 4, 5, 6, 7, 8, 9]:
             return False
     """temp_list3 = [0] * 9
     for each_i in range(9):

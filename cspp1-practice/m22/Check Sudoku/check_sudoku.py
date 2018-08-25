@@ -63,9 +63,14 @@ def check_sudoku(sudoku):
         temp_list1 = temp_list3[each_i]
         if sorted(temp_list1) != [1, 2, 3, 4, 5, 6, 7, 8, 9]:
             return False"""
-    """for i in range(3):
+    for i in range(3):
         for j in range(3):
-            for k in range("""
+            temp_list3 = []
+            for k in range(3):
+                for l in range(3):
+                    temp_list3.append(sudoku[k+(3*i)][l+(3*j)])
+            if sorted(temp_list3) != [1, 2, 3, 4, 5, 6, 7, 8, 9]:
+                return False
     return True
 def main():
     '''

@@ -20,7 +20,7 @@ def print_dictionary(dictionary):
             j += 1
     #print(temp_l)
     for each_i in temp_l:
-        print(each_i,' - ', dictionary[each_i])
+        print(each_i,'-', dictionary[each_i])
         
 
 def main():

@@ -23,5 +23,5 @@ check_sudoku.py:73:4: W0622: Redefining built-in 'str' (redefined-builtin)
 check_sudoku.py:77:8: W0612: Unused variable 'i' (unused-variable)
 
 ------------------------------------------------------------------
-Your code has been rated at 6.07/10 (previous run: 8.00/10, -1.93)
+Your code has been rated at 6.07/10 (previous run: 6.07/10, +0.00)
 

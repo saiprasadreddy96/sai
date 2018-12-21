@@ -14,6 +14,7 @@ def sudoku1(sudoku):
             if (sudoku[i][j] == '.'):
                 sudoku2(sudoku, i, j)
 def sudoku2(sudoku, i, j):
+    #print("hi")
     a = set()
     for k in range(9):
         #print(sudoku[i][k])
@@ -38,9 +39,13 @@ def sudoku2(sudoku, i, j):
         p = p + 1
     #print(a)
     l = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+    str1 = ""
     for i in range(9):
         if l[i] not in a:
-            print(l[i])
+            str1 += l[i]
+            #print(l[i])
+
+    println(str1)
 
 
 

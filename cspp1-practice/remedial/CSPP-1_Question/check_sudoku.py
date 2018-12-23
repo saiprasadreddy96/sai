@@ -14,37 +14,26 @@ def sudoku1(sudoku):
             if (sudoku[i][j] == '.'):
                 sudoku2(sudoku, i, j)
 def sudoku2(sudoku, i, j):
-    #print("hi")
     a = set()
     for k in range(9):
-        #print(sudoku[i][k])
         a.add(sudoku[i][k])
-    #print(a)
     for l in range(9):
-        #print(sudoku[l][j])
         a.add(sudoku[l][j])
-    #print(a)
     m = int(i / 3) * 3
     n = int(j / 3) * 3
-    #print(m)
-    #print(n)
     p = m
     q = n
     while p < m+3:
         q = n
         while q < n+3:
-            #print(sudoku[p][q])
             a.add(sudoku[p][q])
             q = q + 1
         p = p + 1
-    #print(a)
     l = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
     str1 = ""
     for i in range(9):
         if l[i] not in a:
             str1 += l[i]
-            #print(l[i])
-
     println(str1)
 
 

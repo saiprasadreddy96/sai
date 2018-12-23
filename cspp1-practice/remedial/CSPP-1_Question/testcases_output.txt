@@ -17,13 +17,13 @@ Expected Output:
 7
 Your Output: 
 Traceback (most recent call last):
-  File "check_sudoku.py", line 106, in <module>
+  File "check_sudoku.py", line 95, in <module>
     main()
-  File "check_sudoku.py", line 104, in main
+  File "check_sudoku.py", line 93, in main
     sudoku1(sudoku)
   File "check_sudoku.py", line 15, in sudoku1
     sudoku2(sudoku, i, j)
-  File "check_sudoku.py", line 48, in sudoku2
+  File "check_sudoku.py", line 37, in sudoku2
     println(str1)
 NameError: name 'println' is not defined
 ----------------------------------------
@@ -40,13 +40,13 @@ Expected Output:
 9
 Your Output: 
 Traceback (most recent call last):
-  File "check_sudoku.py", line 106, in <module>
+  File "check_sudoku.py", line 95, in <module>
     main()
-  File "check_sudoku.py", line 104, in main
+  File "check_sudoku.py", line 93, in main
     sudoku1(sudoku)
   File "check_sudoku.py", line 15, in sudoku1
     sudoku2(sudoku, i, j)
-  File "check_sudoku.py", line 48, in sudoku2
+  File "check_sudoku.py", line 37, in sudoku2
     println(str1)
 NameError: name 'println' is not defined
 ----------------------------------------
@@ -57,13 +57,13 @@ Expected Output:
 2
 Your Output: 
 Traceback (most recent call last):
-  File "check_sudoku.py", line 106, in <module>
+  File "check_sudoku.py", line 95, in <module>
     main()
-  File "check_sudoku.py", line 104, in main
+  File "check_sudoku.py", line 93, in main
     sudoku1(sudoku)
   File "check_sudoku.py", line 15, in sudoku1
     sudoku2(sudoku, i, j)
-  File "check_sudoku.py", line 48, in sudoku2
+  File "check_sudoku.py", line 37, in sudoku2
     println(str1)
 NameError: name 'println' is not defined
 ----------------------------------------
@@ -74,13 +74,13 @@ Expected Output:
 9
 Your Output: 
 Traceback (most recent call last):
-  File "check_sudoku.py", line 106, in <module>
+  File "check_sudoku.py", line 95, in <module>
     main()
-  File "check_sudoku.py", line 104, in main
+  File "check_sudoku.py", line 93, in main
     sudoku1(sudoku)
   File "check_sudoku.py", line 15, in sudoku1
     sudoku2(sudoku, i, j)
-  File "check_sudoku.py", line 48, in sudoku2
+  File "check_sudoku.py", line 37, in sudoku2
     println(str1)
 NameError: name 'println' is not defined
 ----------------------------------------
@@ -97,13 +97,13 @@ Expected Output:
 15
 Your Output: 
 Traceback (most recent call last):
-  File "check_sudoku.py", line 106, in <module>
+  File "check_sudoku.py", line 95, in <module>
     main()
-  File "check_sudoku.py", line 104, in main
+  File "check_sudoku.py", line 93, in main
     sudoku1(sudoku)
   File "check_sudoku.py", line 15, in sudoku1
     sudoku2(sudoku, i, j)
-  File "check_sudoku.py", line 48, in sudoku2
+  File "check_sudoku.py", line 37, in sudoku2
     println(str1)
 NameError: name 'println' is not defined
 ----------------------------------------
@@ -120,13 +120,13 @@ Expected Output:
 3
 Your Output: 
 Traceback (most recent call last):
-  File "check_sudoku.py", line 106, in <module>
+  File "check_sudoku.py", line 95, in <module>
     main()
-  File "check_sudoku.py", line 104, in main
+  File "check_sudoku.py", line 93, in main
     sudoku1(sudoku)
   File "check_sudoku.py", line 15, in sudoku1
     sudoku2(sudoku, i, j)
-  File "check_sudoku.py", line 48, in sudoku2
+  File "check_sudoku.py", line 37, in sudoku2
     println(str1)
 NameError: name 'println' is not defined
 ----------------------------------------
@@ -143,13 +143,13 @@ Expected Output:
 9
 Your Output: 
 Traceback (most recent call last):
-  File "check_sudoku.py", line 106, in <module>
+  File "check_sudoku.py", line 95, in <module>
     main()
-  File "check_sudoku.py", line 104, in main
+  File "check_sudoku.py", line 93, in main
     sudoku1(sudoku)
   File "check_sudoku.py", line 15, in sudoku1
     sudoku2(sudoku, i, j)
-  File "check_sudoku.py", line 48, in sudoku2
+  File "check_sudoku.py", line 37, in sudoku2
     println(str1)
 NameError: name 'println' is not defined
 ----------------------------------------
@@ -166,13 +166,13 @@ Expected Output:
 6
 Your Output: 
 Traceback (most recent call last):
-  File "check_sudoku.py", line 106, in <module>
+  File "check_sudoku.py", line 95, in <module>
     main()
-  File "check_sudoku.py", line 104, in main
+  File "check_sudoku.py", line 93, in main
     sudoku1(sudoku)
   File "check_sudoku.py", line 15, in sudoku1
     sudoku2(sudoku, i, j)
-  File "check_sudoku.py", line 48, in sudoku2
+  File "check_sudoku.py", line 37, in sudoku2
     println(str1)
 NameError: name 'println' is not defined
 ----------------------------------------
@@ -189,13 +189,13 @@ Expected Output:
 469
 Your Output: 
 Traceback (most recent call last):
-  File "check_sudoku.py", line 106, in <module>
+  File "check_sudoku.py", line 95, in <module>
     main()
-  File "check_sudoku.py", line 104, in main
+  File "check_sudoku.py", line 93, in main
     sudoku1(sudoku)
   File "check_sudoku.py", line 15, in sudoku1
     sudoku2(sudoku, i, j)
-  File "check_sudoku.py", line 48, in sudoku2
+  File "check_sudoku.py", line 37, in sudoku2
     println(str1)
 NameError: name 'println' is not defined
 ----------------------------------------
@@ -212,13 +212,13 @@ Expected Output:
 8
 Your Output: 
 Traceback (most recent call last):
-  File "check_sudoku.py", line 106, in <module>
+  File "check_sudoku.py", line 95, in <module>
     main()
-  File "check_sudoku.py", line 104, in main
+  File "check_sudoku.py", line 93, in main
     sudoku1(sudoku)
   File "check_sudoku.py", line 15, in sudoku1
     sudoku2(sudoku, i, j)
-  File "check_sudoku.py", line 48, in sudoku2
+  File "check_sudoku.py", line 37, in sudoku2
     println(str1)
 NameError: name 'println' is not defined
 ----------------------------------------
@@ -235,13 +235,13 @@ Expected Output:
 4
 Your Output: 
 Traceback (most recent call last):
-  File "check_sudoku.py", line 106, in <module>
+  File "check_sudoku.py", line 95, in <module>
     main()
-  File "check_sudoku.py", line 104, in main
+  File "check_sudoku.py", line 93, in main
     sudoku1(sudoku)
   File "check_sudoku.py", line 15, in sudoku1
     sudoku2(sudoku, i, j)
-  File "check_sudoku.py", line 48, in sudoku2
+  File "check_sudoku.py", line 37, in sudoku2
     println(str1)
 NameError: name 'println' is not defined
 ----------------------------------------
@@ -258,13 +258,13 @@ Expected Output:
 8
 Your Output: 
 Traceback (most recent call last):
-  File "check_sudoku.py", line 106, in <module>
+  File "check_sudoku.py", line 95, in <module>
     main()
-  File "check_sudoku.py", line 104, in main
+  File "check_sudoku.py", line 93, in main
     sudoku1(sudoku)
   File "check_sudoku.py", line 15, in sudoku1
     sudoku2(sudoku, i, j)
-  File "check_sudoku.py", line 48, in sudoku2
+  File "check_sudoku.py", line 37, in sudoku2
     println(str1)
 NameError: name 'println' is not defined
 ----------------------------------------
@@ -281,13 +281,13 @@ Expected Output:
 469
 Your Output: 
 Traceback (most recent call last):
-  File "check_sudoku.py", line 106, in <module>
+  File "check_sudoku.py", line 95, in <module>
     main()
-  File "check_sudoku.py", line 104, in main
+  File "check_sudoku.py", line 93, in main
     sudoku1(sudoku)
   File "check_sudoku.py", line 15, in sudoku1
     sudoku2(sudoku, i, j)
-  File "check_sudoku.py", line 48, in sudoku2
+  File "check_sudoku.py", line 37, in sudoku2
     println(str1)
 NameError: name 'println' is not defined
 ----------------------------------------
@@ -313,13 +313,13 @@ Expected Output:
 469
 Your Output: 
 Traceback (most recent call last):
-  File "check_sudoku.py", line 106, in <module>
+  File "check_sudoku.py", line 95, in <module>
     main()
-  File "check_sudoku.py", line 104, in main
+  File "check_sudoku.py", line 93, in main
     sudoku1(sudoku)
   File "check_sudoku.py", line 15, in sudoku1
     sudoku2(sudoku, i, j)
-  File "check_sudoku.py", line 48, in sudoku2
+  File "check_sudoku.py", line 37, in sudoku2
     println(str1)
 NameError: name 'println' is not defined
 ----------------------------------------
@@ -359,13 +359,13 @@ Expected Output:
 23689
 Your Output: 
 Traceback (most recent call last):
-  File "check_sudoku.py", line 106, in <module>
+  File "check_sudoku.py", line 95, in <module>
     main()
-  File "check_sudoku.py", line 104, in main
+  File "check_sudoku.py", line 93, in main
     sudoku1(sudoku)
   File "check_sudoku.py", line 15, in sudoku1
     sudoku2(sudoku, i, j)
-  File "check_sudoku.py", line 48, in sudoku2
+  File "check_sudoku.py", line 37, in sudoku2
     println(str1)
 NameError: name 'println' is not defined
 ----------------------------------------
@@ -374,13 +374,13 @@ Expected Output:
 Invalid Sudoku:Duplicate values
 Your Output: 
 Traceback (most recent call last):
-  File "check_sudoku.py", line 106, in <module>
+  File "check_sudoku.py", line 95, in <module>
     main()
-  File "check_sudoku.py", line 104, in main
+  File "check_sudoku.py", line 93, in main
     sudoku1(sudoku)
   File "check_sudoku.py", line 15, in sudoku1
     sudoku2(sudoku, i, j)
-  File "check_sudoku.py", line 48, in sudoku2
+  File "check_sudoku.py", line 37, in sudoku2
     println(str1)
 NameError: name 'println' is not defined
 ----------------------------------------
@@ -389,13 +389,13 @@ Expected Output:
 Invalid input
 Your Output: 
 Traceback (most recent call last):
-  File "check_sudoku.py", line 106, in <module>
+  File "check_sudoku.py", line 95, in <module>
     main()
-  File "check_sudoku.py", line 104, in main
+  File "check_sudoku.py", line 93, in main
     sudoku1(sudoku)
   File "check_sudoku.py", line 15, in sudoku1
     sudoku2(sudoku, i, j)
-  File "check_sudoku.py", line 48, in sudoku2
+  File "check_sudoku.py", line 37, in sudoku2
     println(str1)
 NameError: name 'println' is not defined
 ----------------------------------------
@@ -404,13 +404,13 @@ Expected Output:
 Invalid Sudoku:Duplicate values
 Your Output: 
 Traceback (most recent call last):
-  File "check_sudoku.py", line 106, in <module>
+  File "check_sudoku.py", line 95, in <module>
     main()
-  File "check_sudoku.py", line 104, in main
+  File "check_sudoku.py", line 93, in main
     sudoku1(sudoku)
   File "check_sudoku.py", line 15, in sudoku1
     sudoku2(sudoku, i, j)
-  File "check_sudoku.py", line 48, in sudoku2
+  File "check_sudoku.py", line 37, in sudoku2
     println(str1)
 NameError: name 'println' is not defined
 ----------------------------------------
@@ -482,13 +482,13 @@ Expected Output:
 235689
 Your Output: 
 Traceback (most recent call last):
-  File "check_sudoku.py", line 106, in <module>
+  File "check_sudoku.py", line 95, in <module>
     main()
-  File "check_sudoku.py", line 104, in main
+  File "check_sudoku.py", line 93, in main
     sudoku1(sudoku)
   File "check_sudoku.py", line 15, in sudoku1
     sudoku2(sudoku, i, j)
-  File "check_sudoku.py", line 48, in sudoku2
+  File "check_sudoku.py", line 37, in sudoku2
     println(str1)
 NameError: name 'println' is not defined
 ----------------------------------------
@@ -497,13 +497,13 @@ Expected Output:
 Invalid input
 Your Output: 
 Traceback (most recent call last):
-  File "check_sudoku.py", line 106, in <module>
+  File "check_sudoku.py", line 95, in <module>
     main()
-  File "check_sudoku.py", line 104, in main
+  File "check_sudoku.py", line 93, in main
     sudoku1(sudoku)
   File "check_sudoku.py", line 15, in sudoku1
     sudoku2(sudoku, i, j)
-  File "check_sudoku.py", line 25, in sudoku2
+  File "check_sudoku.py", line 21, in sudoku2
     a.add(sudoku[l][j])
 IndexError: list index out of range
 ----------------------------------------
@@ -562,13 +562,13 @@ Expected Output:
 1346
 Your Output: 
 Traceback (most recent call last):
-  File "check_sudoku.py", line 106, in <module>
+  File "check_sudoku.py", line 95, in <module>
     main()
-  File "check_sudoku.py", line 104, in main
+  File "check_sudoku.py", line 93, in main
     sudoku1(sudoku)
   File "check_sudoku.py", line 15, in sudoku1
     sudoku2(sudoku, i, j)
-  File "check_sudoku.py", line 48, in sudoku2
+  File "check_sudoku.py", line 37, in sudoku2
     println(str1)
 NameError: name 'println' is not defined
 ----------------------------------------
@@ -634,13 +634,13 @@ Expected Output:
 4567
 Your Output: 
 Traceback (most recent call last):
-  File "check_sudoku.py", line 106, in <module>
+  File "check_sudoku.py", line 95, in <module>
     main()
-  File "check_sudoku.py", line 104, in main
+  File "check_sudoku.py", line 93, in main
     sudoku1(sudoku)
   File "check_sudoku.py", line 15, in sudoku1
     sudoku2(sudoku, i, j)
-  File "check_sudoku.py", line 48, in sudoku2
+  File "check_sudoku.py", line 37, in sudoku2
     println(str1)
 NameError: name 'println' is not defined
 ----------------------------------------
@@ -672,13 +672,13 @@ Expected Output:
 6
 Your Output: 
 Traceback (most recent call last):
-  File "check_sudoku.py", line 106, in <module>
+  File "check_sudoku.py", line 95, in <module>
     main()
-  File "check_sudoku.py", line 104, in main
+  File "check_sudoku.py", line 93, in main
     sudoku1(sudoku)
   File "check_sudoku.py", line 15, in sudoku1
     sudoku2(sudoku, i, j)
-  File "check_sudoku.py", line 48, in sudoku2
+  File "check_sudoku.py", line 37, in sudoku2
     println(str1)
 NameError: name 'println' is not defined
 ----------------------------------------
@@ -723,13 +723,13 @@ Expected Output:
 19
 Your Output: 
 Traceback (most recent call last):
-  File "check_sudoku.py", line 106, in <module>
+  File "check_sudoku.py", line 95, in <module>
     main()
-  File "check_sudoku.py", line 104, in main
+  File "check_sudoku.py", line 93, in main
     sudoku1(sudoku)
   File "check_sudoku.py", line 15, in sudoku1
     sudoku2(sudoku, i, j)
-  File "check_sudoku.py", line 48, in sudoku2
+  File "check_sudoku.py", line 37, in sudoku2
     println(str1)
 NameError: name 'println' is not defined
 ----------------------------------------

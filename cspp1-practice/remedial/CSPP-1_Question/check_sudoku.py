@@ -34,7 +34,7 @@ def sudoku2(sudoku, i, j):
     for i in range(9):
         if l[i] not in a:
             str1 += l[i]
-    println(str1)
+    print(str1)
 
 
 
